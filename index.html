@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
 	<link rel="stylesheet" type="text/css" href="css/slick.css" />
 	<link rel="stylesheet" type="text/css" href="css/jquery.powertip.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="loaded">
 
@@ -43,9 +44,7 @@
 					</div>
 				</div>
 				
-				<a href="#" class="header__call call">Мы вам перезвоним <span>в течении 5 минут</span></a>
-	
-				
+				<a href="#popup-callback"  class="header__call call open-popup-link">Мы вам перезвоним <span>в течении 5 минут</span></a>
 			</div>
 		</div>
 	
@@ -67,71 +66,65 @@
 			</div>
 		</div>
 		
-		<div class="mobile-navbar ">
-			<div class="mobile-navbar__container">
-				<div class="mobile-navbar__header">
-					<div class="mobile-navbar__close mm-toggle"></div>
+		
+	</header>
+	<div class="mobile-navbar ">
+		<div class="mobile-navbar__container">
+			<div class="mobile-navbar__header">
+				<div class="mobile-navbar__close mm-toggle"></div>
+			</div>
+			<div class="mobile-navbar__main">
+				<div class="mm-search">
+					<form action="#">
+						<input type="text" class="form-input" placeholder="Поиск">
+						<button type="submit" class="form-btn"><svg class="icon icon-zoom"><use xlink:href="img/sprite.svg#zoom"></use></svg></button>
+					</form>
 				</div>
-				<div class="mobile-navbar__main">
-					<div class="mm-search">
-						<form action="#">
-							<input type="text" class="form-input" placeholder="Поиск">
-							<button type="submit" class="form-btn"><svg class="icon icon-zoom"><use xlink:href="img/sprite.svg#zoom"></use></svg></button>
-						</form>
-					</div>
-					<ul class="mobile-menu">
-						<li class="mobile-menu__item current-menu-item">
-							<a href="#" class="mobile-menu__link">Главная</a>
-						</li>
-						<li class="mobile-menu__item">
-							<a href="#" class="mobile-menu__link">О компании</a>
-						</li>
-						<li class="mobile-menu__item">
-							<a href="#" class="mobile-menu__link">Наша продукция</a>
-						</li>
-						<li class="mobile-menu__item">
-							<a href="#" class="mobile-menu__link">Где купить</a>
-						</li>
-						<li class="mobile-menu__item">
-							<a href="#" class="mobile-menu__link">Новости</a>
-						</li>
-						<li class="mobile-menu__item">
-							<a href="#" class="mobile-menu__link">Парнерам</a>
-						</li>
-						<li class="mobile-menu__item">
-							<a href="#" class="mobile-menu__link">Контакты</a>
-						</li>
-					</ul>
+				<ul class="mobile-menu">
+					<li class="mobile-menu__item current-menu-item">
+						<a href="#" class="mobile-menu__link">Главная</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="#" class="mobile-menu__link">О компании</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="#" class="mobile-menu__link">Наша продукция</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="#" class="mobile-menu__link">Где купить</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="#" class="mobile-menu__link">Новости</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="#" class="mobile-menu__link">Парнерам</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="#" class="mobile-menu__link">Контакты</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mobile-navbar__footer">
+				<div class="phone ">
+					<a href="viber://add?number=380992959777" class="phone__icon phone__icon--viber"><svg class="icon icon-viber"><use xlink:href="img/sprite.svg#viber"></use></svg></a>
+					<a href="whatsapp://send?phone=380992959777" class="phone__icon phone__icon--whatsapp"><svg class="icon icon-whatsapp"><use xlink:href="img/sprite.svg#whatsapp"></use></svg></a>
+					<a href="tel:380992959777" class="phone__number">+38 (099) 29 59 777</a>
 				</div>
-				<div class="mobile-navbar__footer">
-					<div class="phone ">
-						<a href="viber://add?number=380992959777" class="phone__icon phone__icon--viber"><svg class="icon icon-viber"><use xlink:href="img/sprite.svg#viber"></use></svg></a>
-						<a href="whatsapp://send?phone=380992959777" class="phone__icon phone__icon--whatsapp"><svg class="icon icon-whatsapp"><use xlink:href="img/sprite.svg#whatsapp"></use></svg></a>
-						<a href="tel:380992959777" class="phone__number">+38 (099) 29 59 777</a>
-					</div>
 	
-					<div class="address-list">
-						<div class="address-list__item">
-							<svg class="icon icon-envelope"><use xlink:href="img/sprite.svg#envelope"></use></svg>
-							<a href="mailto:alexander@agripartsglobal.com.ua">alexander@agripartsglobal.com.ua</a>
-						</div>
-						<div class="address-list__item">
-							<svg class="icon icon-envelope"><use xlink:href="img/sprite.svg#envelope"></use></svg>
-							<a href="mailto:info@agripartsglobal.com.ua">info@agripartsglobal.com.ua</a>
-						</div>
+				<div class="address-list">
+					<div class="address-list__item">
+						<svg class="icon icon-envelope"><use xlink:href="img/sprite.svg#envelope"></use></svg>
+						<a href="mailto:alexander@agripartsglobal.com.ua">alexander@agripartsglobal.com.ua</a>
 					</div>
-					
-					<a href="#" class=" call">Мы вам перезвоним <span>в течении 5 минут</span></a>
-					<div class="social ">
-						<a href="#" class="social__btn"><svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#facebook"></use></svg></a>
-						<a href="#" class="social__btn"><svg class="icon icon-instagram"><use xlink:href="img/sprite.svg#instagram"></use></svg></a>
-						<a href="#" class="social__btn"><svg class="icon icon-linkedin"><use xlink:href="img/sprite.svg#linkedin"></use></svg></a>
+					<div class="address-list__item">
+						<svg class="icon icon-envelope"><use xlink:href="img/sprite.svg#envelope"></use></svg>
+						<a href="mailto:info@agripartsglobal.com.ua">info@agripartsglobal.com.ua</a>
 					</div>
 				</div>
 			</div>
-			<div class="mobile-navbar__overlay mm-toggle"></div>
 		</div>
-	</header>
+		<div class="mobile-navbar__overlay mm-toggle"></div>
+	</div>
 	<!-- HEADER EOF   -->
 
 	<!-- BEGIN MAIN -->
@@ -292,21 +285,21 @@
 								<div class="quiz-wrap__top">
 									<div class="quiz__title"><span class="quiz__step">3</span> Укажите длину карданного  вала: <span class="info-block tooltips-center" title="Меряем длину карданного вала в сложенном виде по центрам крестовин или по краям вала."><svg class="icon icon-information"><use xlink:href="img/sprite.svg#information"></use></svg></span></div>
 									
-									<div class="form-field hand form-radio">
+									<div class="form-field form-radio disabled">
 										<label>Укажите диаметр в мм:</label>
 										<div class="form-radio__cont">
 											<label class="radio" >
-												<input type="radio" name="fr-radio" id="i_diameter"> 
+												<input type="radio" name="fr-radio" disabled> 
 												<span class="radio__figure"></span>
 											</label>
-											<input type="text" class="form-input" placeholder="Укажите диаметр" disabled>
+											<input type="text" class="form-input" placeholder="Укажите диаметр" disabled="">
 										</div>
 									</div>
-									<div class="form-field hand form-radio selected">
+									<div class="form-field form-radio">
 										<label>Укажите высоту в мм:</label>
 										<div class="form-radio__cont">
 											<label class="radio">
-												<input type="radio"  name="fr-radio" checked="" id="i_height">
+												<input type="radio"  name="fr-radio" checked="">
 												<span class="radio__figure"></span>
 											</label>
 											<input type="text" class="form-input" placeholder="Укажите высоту">
@@ -738,58 +731,58 @@
 				
 				<div class="gallery row">
 					<div class="gallery__item col-lg-4 col-sm-6">
-						<div class="gallery-inner">
+						<a href="#popup-callback" class="gallery-inner open-popup-link" >
 							<div class="gallery-inner__img" style="background-image: url('img/gallery_1.jpg')"></div>
 							<div class="gallery-inner__title">сеялки</div>
-						</div>
+						</a>
 					</div>
 					<div class="gallery__item col-lg-4 col-sm-6">
-						<div class="gallery-inner">
+						<a href="#popup-callback" class="gallery-inner open-popup-link" >
 							<div class="gallery-inner__img" style="background-image: url('img/gallery_2.jpg')"></div>
 							<div class="gallery-inner__title">Опрыскиватели</div>
-						</div>
+						</a>
 					</div>
 					<div class="gallery__item col-lg-4 col-sm-6">
-						<div class="gallery-inner">
+						<a href="#popup-callback" class="gallery-inner open-popup-link" >
 							<div class="gallery-inner__img" style="background-image: url('img/gallery_3.jpg')"></div>
 							<div class="gallery-inner__title">Разбрасыватели минеральных удобрений</div>
-						</div>
+						</a>
 					</div>
 					<div class="gallery__item col-lg-4 col-sm-6">
-						<div class="gallery-inner">
+						<a href="#popup-callback" class="gallery-inner open-popup-link" >
 							<div class="gallery-inner__img" style="background-image: url('img/gallery_4.jpg')"></div>
 							<div class="gallery-inner__title">Жатки</div>
-						</div>
+						</a>
 					</div>
 					<div class="gallery__item col-lg-4 col-sm-6">
-						<div class="gallery-inner">
+						<a href="#popup-callback" class="gallery-inner open-popup-link" >
 							<div class="gallery-inner__img" style="background-image: url('img/gallery_5.jpg')"></div>
 							<div class="gallery-inner__title">Косилки</div>
-						</div>
+						</a>
 					</div>
 					<div class="gallery__item col-lg-4 col-sm-6">
-						<div class="gallery-inner">
+						<a href="#popup-callback" class="gallery-inner open-popup-link" >
 							<div class="gallery-inner__img" style="background-image: url('img/gallery_6.jpg')"></div>
 							<div class="gallery-inner__title">Измельчители</div>
-						</div>
+						</a>
 					</div>
 					<div class="gallery__item col-lg-4 col-sm-6">
-						<div class="gallery-inner">
+						<a href="#popup-callback" class="gallery-inner open-popup-link" >
 							<div class="gallery-inner__img" style="background-image: url('img/gallery_7.jpg')"></div>
 							<div class="gallery-inner__title">Кормосмесители</div>
-						</div>
+						</a>
 					</div>
 					<div class="gallery__item col-lg-4 col-sm-6">
-						<div class="gallery-inner">
+						<a href="#popup-callback" class="gallery-inner open-popup-link" >
 							<div class="gallery-inner__img" style="background-image: url('img/gallery_8.jpg')"></div>
 							<div class="gallery-inner__title">Мульчеры</div>
-						</div>
+						</a>
 					</div>
 					<div class="gallery__item col-lg-4 col-sm-6">
-						<div class="gallery-inner">
+						<a href="#popup-callback" class="gallery-inner open-popup-link" >
 							<div class="gallery-inner__img" style="background-image: url('img/gallery_9.jpg')"></div>
 							<div class="gallery-inner__title">грунтообратывающая техника</div>
-						</div>
+						</a>
 					</div>
 				</div>
 
@@ -800,7 +793,7 @@
 				</div>
 
 				<div class="button-wrap">
-					<a href="#" class="btn">Получить консультацию</a>
+					<a href="#popup-callback" class="btn open-popup-link">Получить консультацию</a>
 				</div>
 			</div>
 		</section>
@@ -881,7 +874,7 @@
 							</div>
 							<div class="card-inner__buttons">
 								<a href="#" class="btn">Купить</a>
-								<a href="#" class="btn btn--default">Подобрать</a>
+								<a href="#popup-callback2" class="btn btn--default open-popup-link">Подобрать</a>
 							</div>
 						</div>
 					</div>
@@ -895,7 +888,7 @@
 							</div>
 							<div class="card-inner__buttons">
 								<a href="#" class="btn">Купить</a>
-								<a href="#" class="btn btn--default">Подобрать</a>
+								<a href="#popup-callback2" class="btn btn--default open-popup-link">Подобрать</a>
 							</div>
 						</div>
 					</div>
@@ -909,7 +902,7 @@
 							</div>
 							<div class="card-inner__buttons">
 								<a href="#" class="btn">Купить</a>
-								<a href="#" class="btn btn--default">Подобрать</a>
+								<a href="#popup-callback2" class="btn btn--default open-popup-link">Подобрать</a>
 							</div>
 						</div>
 					</div>
@@ -923,7 +916,7 @@
 							</div>
 							<div class="card-inner__buttons">
 								<a href="#" class="btn">Купить</a>
-								<a href="#" class="btn btn--default">Подобрать</a>
+								<a href="#popup-callback2" class="btn btn--default open-popup-link">Подобрать</a>
 							</div>
 						</div>
 					</div>
@@ -937,7 +930,7 @@
 							</div>
 							<div class="card-inner__buttons">
 								<a href="#" class="btn">Купить</a>
-								<a href="#" class="btn btn--default">Подобрать</a>
+								<a href="#popup-callback2" class="btn btn--default open-popup-link">Подобрать</a>
 							</div>
 						</div>
 					</div>
@@ -951,7 +944,7 @@
 							</div>
 							<div class="card-inner__buttons">
 								<a href="#" class="btn">Купить</a>
-								<a href="#" class="btn btn--default">Подобрать</a>
+								<a href="#popup-callback2" class="btn btn--default open-popup-link">Подобрать</a>
 							</div>
 						</div>
 					</div>
@@ -965,7 +958,7 @@
 							</div>
 							<div class="card-inner__buttons">
 								<a href="#" class="btn">Купить</a>
-								<a href="#" class="btn btn--default">Подобрать</a>
+								<a href="#popup-callback2" class="btn btn--default open-popup-link">Подобрать</a>
 							</div>
 						</div>
 					</div>
@@ -979,7 +972,7 @@
 							</div>
 							<div class="card-inner__buttons">
 								<a href="#" class="btn">Купить</a>
-								<a href="#" class="btn btn--default">Подобрать</a>
+								<a href="#popup-callback2" class="btn btn--default open-popup-link">Подобрать</a>
 							</div>
 						</div>
 					</div>
@@ -993,7 +986,7 @@
 							</div>
 							<div class="card-inner__buttons">
 								<a href="#" class="btn">Купить</a>
-								<a href="#" class="btn btn--default">Подобрать</a>
+								<a href="#popup-callback2" class="btn btn--default open-popup-link">Подобрать</a>
 							</div>
 						</div>
 					</div>
@@ -1150,24 +1143,37 @@
 			</div>
 		</section>
 
-		<section class="section-action " >
-			<div class="container">
-				<div class="row action-wrap align-items-center align-items-md-start">
-					<div class="col-md-5 col-sm-6 action-wrap__img">
-						<img src="img/action.jpg" alt="">
-					</div>
-					<div class="col-md-7 col-sm-6 action-wrap__content">
-						<div class="section__head">
-							<h2 class="section__title">Акционное предложение</h2>
-							<h5 class="section__subtitle">Приобретая карданный вал в сборе, получи крестовину <strong class="color-success">в подарок!</strong></h5>
+
+
+		<section class=" section-action" >
+			<div class="action-container">
+				<div class="container">
+					<div class="row action-wrap align-items-center align-items-md-start">
+						<div class="col-md-5 col-sm-6 action-wrap__img">
+							<img src="img/action.jpg" alt="">
 						</div>
-						<div class="val">
-							<img src="img/action_2.png" alt="">
+						<div class="col-md-7 col-sm-6 action-wrap__content">
+							<div class="section__head">
+								<h2 class="section__title">Акционное предложение</h2>
+								<h5 class="section__subtitle">Приобретая карданный вал в сборе, получи крестовину <strong class="color-success">в подарок!</strong></h5>
+							</div>
+							<div class="button-wrap  visible-sm">
+								<a href="#popup-callback" class="btn open-popup-link">Заказать</a>
+							</div>
+							<div class="val">
+								<img src="img/action_2.png" alt="">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="container hidden-sm">
+				<div class="section-btn">
+					<a href="#popup-callback" class="btn open-popup-link">Заказать</a>
+				</div>
+			</div>
 		</section>
+		
 
 		<section class="section section-catalogs section--dark" style="background-image: url('img/section-dark-2.jpg')">
 			<div class="container">
@@ -1330,6 +1336,28 @@
 				<input type="tel" class="form-input tel" placeholder="Ваш телефон">
 			</div>
 			<div class="form-button text-center">
+				<button type="submit" class="btn ">Отправить</button>
+			</div>
+		</form>
+	</div>
+	
+	<div id="popup-callback2" class="popup bg mfp-hide">
+		<div class="popup__head">
+			<h2 class="popup__title ">Заполните форму</h2>
+			<h5 class="popup__subtitle">и мы перезвоним вам в течении 2-х минут</h5>
+		</div>
+	
+		<form action="#" >
+			<div class="form-field">
+				<label>Укажите ваше имя</label>
+				<input type="text" class="form-input" placeholder="Ваше имя">
+			</div>
+			<div class="form-field">
+				<label>Укажите ваш телефон</label>
+				<input type="tel" class="form-input tel" placeholder="Ваш телефон">
+			</div>
+			<div class="form-button text-center">
+				<!-- <a href="#" class="btn ">купить</a> -->
 				<button type="submit" class="btn ">Отправить</button>
 			</div>
 		</form>
